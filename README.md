@@ -14,3 +14,6 @@ A `Xamarin.Forms` application, weather search by city.
 - Search City Page
 - City Listing
 - City Details.
+
+
+Rebuild solution and restore packages.
