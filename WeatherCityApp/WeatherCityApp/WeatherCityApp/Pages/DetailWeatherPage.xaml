@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:WeatherCityApp.ViewModels;assembly=WeatherCityApp"
+             x:Class="WeatherCityApp.Pages.DetailWeatherPage" 
+             Title="City Weather Detail">
+  
+  <ContentPage.BindingContext>
+    <viewModels:DetailWeatherViewModel />
+  </ContentPage.BindingContext>
+
+  <ContentPage.Content>
+    <StackLayout>
+      <Label Text="City Name"></Label>
+      <Label Text="{Binding CityWeather.CityName}"></Label>
+      <Label Text="City Country"></Label>
+      <Label Text="{Binding CityWeather.CityCountry}"></Label>
+      <Label Text="Weather"></Label>
+      <Label Text="{Binding CityWeather.Weather}"></Label>
+      <Label Text="Temperature"></Label>
+      <Label Text="{Binding CityWeather.Temp}"></Label>
+      <Label Text="Temperature Min"></Label>
+      <Label Text="{Binding CityWeather.TempMin}"></Label>
+      <Label Text="Temperature Max"></Label>
+      <Label Text="{Binding CityWeather.TempMax}"></Label>
+      <Label Text="Pressure"></Label>
+      <Label Text="{Binding CityWeather.Pressure}"></Label>
+      <Label Text="Humidity"></Label>
+      <Label Text="{Binding CityWeather.Humidity}"></Label>
+      <Label Text="Wind Speed"></Label>
+      <Label Text="{Binding CityWeather.WindSpeed}"></Label>
+      <Label Text="Wind Direction"></Label>
+      <Label Text="{Binding CityWeather.WindDirection}"></Label>
+    </StackLayout>
+  </ContentPage.Content>
+</ContentPage>
